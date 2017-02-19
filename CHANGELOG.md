@@ -1,3 +1,13 @@
+# v0.2 2017-02-19
+
+This release adds following new documentation:
+
+* Added Docker Compose option to run as detached
+  to readme.
+
+Thanks to GitHub user stephenmoloney for his
+contributions.
+
 # v0.1 2017-02-13
 
 This release adds following new features:

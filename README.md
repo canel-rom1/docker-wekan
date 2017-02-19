@@ -19,7 +19,13 @@ git clone https://github.com/wekan/wekan-mongodb.git
 cd wekan-mongodb
 ```
 
-3) Write:
+3a) Detached mode:
+
+```bash
+docker-compose up -d
+```
+
+3b) Running attached to console, so Ctrl-c stops it:
 
 ```bash
 docker-compose up
