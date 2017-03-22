@@ -44,5 +44,5 @@ docker-compose up
 
 [Create GitHub issue](https://github.com/wekan/wekan/issues)
 
-[screenshot]: http://i.imgur.com/OCtpqb6.png
+[screenshot]: http://i.imgur.com/lzvpeS9.png
 
