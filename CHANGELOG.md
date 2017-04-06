@@ -1,3 +1,12 @@
+# v0.3 2017-04-06
+
+This release adds following new features:
+
+* Use Meteor 1.4 based Docker image.
+
+Thanks to GitHub users brylie and stephenmoloney for
+their contributions.
+
 # v0.2 2017-02-19
 
 This release adds following new documentation:
