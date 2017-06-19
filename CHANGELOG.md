@@ -1,3 +1,11 @@
+# v0.7 2017-06-19
+
+This release adds following new features:
+
+* Use MongoDB 3.2.14
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.6 2017-05-18
 
 This release adds following new features:
