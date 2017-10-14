@@ -3,7 +3,9 @@ version: '2'
 services:
 
   wekandb:
-    image: mongo:3.2.16
+    # All Wekan data is stored in MongoDB. For backup and restore, see:
+    #   https://github.com/wekan/wekan/wiki/Export-Docker-Mongo-Data
+    image: mongo:3.2.17
     container_name: wekan-db
     restart: always
     command: mongod --smallfiles --oplogSize 128
@@ -15,19 +17,65 @@ services:
       - wekan-db:/data/db
       - wekan-db-dump:/dump
 
+  # Upgrading Wekan to new version:
+  # 1) Stop Wekan:
+  #      docker-compose stop
+  # 2) Download new version:
+  #      docker-compose pull wekan
+  # 3) If you have more networks for VPN etc as described at bottom of
+  #    this config, download for them too:
+  #      docker-compose pull wekan2
+  # 4) Start Wekan:
+  #      docker-compose start
+
   wekan:
+    # Wekan container only has Node.js and related code,
+    #   there is no data stored here.
     image: wekanteam/wekan:latest
     container_name: wekan-app
     restart: always
     networks:
       - wekan-tier
+    #---------------------------------------------------------------
+    # For running Wekan in different port like 3000, use: 3000:80
     ports:
       - 80:80
+    #---------------------------------------------------------------
+    # Change ROOT_URL to your real Wekan URL, for example:
+    #   http://example.com
+    #   http://example.com/wekan
+    #   http://192.168.1.100
+    #---------------------------------------------------------------
+    # Email settings are required in both MAIL_URL and Admin Panel,
+    #   see https://github.com/wekan/wekan/wiki/Troubleshooting-Mail
+    #---------------------------------------------------------------
+    # Not needed on Docker, but if you had installed from source,
+    #   you could also have setup Wekan Node.js port at localhost
+    #   with setting: PORT=3000
+    #   and have Nginx proxy to port 3000, see Wekan wiki.
     environment:
       - MONGO_URL=mongodb://wekandb:27017/wekan
-      - ROOT_URL=http://localhost
+      - ROOT_URL='http://example.com'
+      - MAIL_URL='smtp://user:pass@mailserver.example.com:25/'
+      - MAIL_FROM='Example Wekan Support <support@example.com>'
     depends_on:
       - wekandb
+
+#------------------------------------------------------------------
+#  When using Wekan both at office LAN and remote VPN:
+#    1) Have above Wekan docker container config with LAN IP address
+#    2) Copy all of above Wekan config below, change name to different
+#       like wekan2 or wekanvpn, and change ROOT_URL to server VPN IP
+#       address.
+#    3) This way both Wekan containers can use same MongoDB database
+#       and see the same Wekan boards.
+#    4) You could also add 3rd Wekan container for 3rd network etc.
+#------------------------------------------------------------------
+#  wekan2:
+#    ....COPY CONFIG FROM ABOVE TO HERE...
+#    environment:
+#      - ROOT_URL='http://10.10.10.10'
+#      ...COPY CONFIG FROM ABOVE TO HERE...
 
 volumes:
   wekan-db:

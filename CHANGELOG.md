@@ -1,3 +1,12 @@
+# v0.10 2017-10-14
+
+Thise release add following new features:
+
+* Use MongoDB 3.2.17
+* Add more documentation to docker-compose.yml
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.9 2017-09-02
 
 This release adds following new features:
