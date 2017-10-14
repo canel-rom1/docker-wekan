@@ -2,6 +2,39 @@ version: '2'
 
 services:
 
+  # 1) Create a dedicated user for Wekan, for example:
+  #      sudo useradd -d /home/wekan -m -s /bin/bash wekan
+  # 2) Add this user to the docker group, then logout+login or reboot:
+  #      sudo usermod -aG docker wekan
+  # 3) Then login as user wekan.
+  # 4) Create this file /home/wekan/docker-compose.yml with your modifications.
+  # 5a) Running Docker as service, on Systemd like Debian 9, Ubuntu 16.04, CentOS 7:
+  #      sudo systemctl enable docker
+  #      sudo systemctl start docker
+  # 5b) Running Docker as service, on init.d like Debian 8, Ubuntu 14.04, CentOS 6:
+  #      sudo update-rc.d docker defaults
+  #      sudo service docker start
+  # 6) For seeing does Wekan work, try this and check with your webbroser:
+  #      docker-compose up
+  # 7) Stop Wekan and start Wekan in background:
+  #     docker-compose stop
+  #     docker-compose up -d
+  # 8) See running Docker containers:
+  #     docker ps
+  # 9) See stopped Docker containers:
+  #     docker ps -a
+
+  # Upgrading Wekan to new version:
+  # 1) Stop Wekan:
+  #      docker-compose stop
+  # 2) Download new version:
+  #      docker-compose pull wekan
+  # 3) If you have more networks for VPN etc as described at bottom of
+  #    this config, download for them too:
+  #      docker-compose pull wekan2
+  # 4) Start Wekan:
+  #      docker-compose start
+
   wekandb:
     # All Wekan data is stored in MongoDB. For backup and restore, see:
     #   https://github.com/wekan/wekan/wiki/Export-Docker-Mongo-Data
@@ -16,17 +49,6 @@ services:
     volumes:
       - wekan-db:/data/db
       - wekan-db-dump:/dump
-
-  # Upgrading Wekan to new version:
-  # 1) Stop Wekan:
-  #      docker-compose stop
-  # 2) Download new version:
-  #      docker-compose pull wekan
-  # 3) If you have more networks for VPN etc as described at bottom of
-  #    this config, download for them too:
-  #      docker-compose pull wekan2
-  # 4) Start Wekan:
-  #      docker-compose start
 
   wekan:
     # Wekan container only has Node.js and related code,
