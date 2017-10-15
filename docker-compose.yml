@@ -77,8 +77,8 @@ services:
     #   and have Nginx proxy to port 3000, see Wekan wiki.
     environment:
       - MONGO_URL=mongodb://wekandb:27017/wekan
-      - ROOT_URL='http://example.com'
-      - MAIL_URL='smtp://user:pass@mailserver.example.com:25/'
+      - ROOT_URL=http://example.com
+      - MAIL_URL=smtp://user:pass@mailserver.example.com:25/
       - MAIL_FROM='Example Wekan Support <support@example.com>'
     depends_on:
       - wekandb
