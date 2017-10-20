@@ -70,6 +70,7 @@ services:
     #---------------------------------------------------------------
     # Email settings are required in both MAIL_URL and Admin Panel,
     #   see https://github.com/wekan/wekan/wiki/Troubleshooting-Mail
+    #   For SSL in email, change smtp:// to smtps://
     #---------------------------------------------------------------
     # Not needed on Docker, but if you had installed from source,
     #   you could also have setup Wekan Node.js port at localhost
