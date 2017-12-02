@@ -1,3 +1,10 @@
+# v0.11 2017-12-02
+
+* Use MongoDB 3.2.18
+* Added backup and upgrade instructions to readme.
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.10 2017-10-14
 
 Thise release add following new features:
