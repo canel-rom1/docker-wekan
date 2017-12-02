@@ -40,6 +40,49 @@ docker-compose up
 
 7) [Restore your MongoDB data](https://github.com/wekan/wekan/wiki/Export-Docker-Mongo-Data).
 
+## Backup before upgrading
+
+[Backup all data from MongoDB](https://github.com/wekan/wekan/wiki/Export-Docker-Mongo-Data)
+
+## Upgrading Wekan
+
+1) In wekan-mongodb directory, stop Wekan:
+
+```bash
+docker-compose stop
+```
+
+2) Check what is CONTAINER ID of wekanteam/wekan:latest container. Then remove container.
+
+```bash
+docker ps
+docker rm CONTAINER-ID-HERE
+```
+
+3) Check Docker images, what is IMAGE ID of wekanteam/wekan:latest, and remove wekanteam/wekan:latest image:
+
+```bash
+docker images
+docker rmi IMAGE-ID-HERE
+```
+
+4) If you have made backups of MongoDB container to outside of Docker, and want to upgrade MongoDB, you could also delete MongoDB container and image.
+
+5) Start Wekan again in background:
+
+```bash
+docker-compose up -d
+```
+
+6) You can also check container logs:
+
+```bash
+docker ps
+docker logs CONTAINER-ID-OF-Wekan-or-MongoDB-HERE
+```
+
+7) Restore MongoDB data if needed.
+
 ## Feedback
 
 [Create GitHub issue](https://github.com/wekan/wekan/issues)
