@@ -1,3 +1,9 @@
+# v0.12 2017-12-03
+
+* Add commented out instructions for Docker image of new Wekan that has Node v6.12 and Meteor v1.6
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.11 2017-12-02
 
 * Use MongoDB 3.2.18
