@@ -54,10 +54,11 @@ services:
     # Wekan container only has Node.js and related code,
     # there is no data stored here.
     #
-    # Old Wekan that uses Node 4.8.6 and Meteor 1.4:
-    image: wekanteam/wekan:latest
-    # New Wekan that uses Node 6.12 and Meteor 1.6:
-    # image: wekanteam/wekan:meteor-1.6
+    # Docker Hub, updates more slowly
+    #image: wekanteam/wekan:latest
+    #
+    # Quay, updates faster
+    image: quay.io/wekan/wekan
     container_name: wekan-app
     restart: always
     networks:
