@@ -1,3 +1,9 @@
+# v0.14 2018-03-06
+
+* Use MongoDB 3.2.19
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.13 2017-01-28
 
 * Use quay.io Docker image that builds faster than Docker Hub
