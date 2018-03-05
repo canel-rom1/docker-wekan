@@ -54,10 +54,10 @@ services:
     # Wekan container only has Node.js and related code,
     # there is no data stored here.
     #
-    # Docker Hub, updates more slowly
+    # Docker Hub, usually broken:
     #image: wekanteam/wekan:latest
     #
-    # Quay, updates faster
+    # Quay, usually works, updates faster:
     image: quay.io/wekan/wekan
     container_name: wekan-app
     restart: always
