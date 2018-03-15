@@ -1,3 +1,8 @@
+# v0.15 2018-03-15
+
+Change snap to previous MongoDB version 3.2.18 because of data loss:
+https://github.com/wekan/wekan-mongodb/issues/9
+
 # v0.14 2018-03-06
 
 * Use MongoDB 3.2.19
