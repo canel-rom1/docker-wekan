@@ -1,7 +1,17 @@
+# v0.16 2018-04-04
+
+* Change back to use MongoDB 3.2.19.
+* Add info about MongoDB oplog for large scale usage.
+* Reorder docs to be above settings.
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.15 2018-03-15
 
 Change snap to previous MongoDB version 3.2.18 because of data loss:
 https://github.com/wekan/wekan-mongodb/issues/9
+
+Thanks to GitHub user xet7 for contributions.
 
 # v0.14 2018-03-06
 
