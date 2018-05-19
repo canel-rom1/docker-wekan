@@ -1,3 +1,9 @@
+# v0.17 2018-05-19
+
+* Use MongoDB 3.2.20
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.16 2018-04-04
 
 * Change back to use MongoDB 3.2.19.
