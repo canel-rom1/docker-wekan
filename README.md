@@ -59,7 +59,7 @@ docker ps
 docker rm CONTAINER-ID-HERE
 ```
 
-3) Check Docker images, what is IMAGE ID of wekanteam/wekan:latest, and remove wekanteam/wekan:latest image:
+3) Check Docker images, what is IMAGE ID of quay.io/wekan/wekan, and remove quay.io/wekan/wekan image:
 
 ```bash
 docker images
