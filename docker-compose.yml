@@ -114,6 +114,12 @@ services:
       #---------------------------------------------------------------
       - MAIL_URL=smtp://user:pass@mailserver.example.com:25/
       - MAIL_FROM='Example Wekan Support <support@example.com>'
+      #---------------------------------------------------------------
+      # == WEKAN API ==
+      # Wekan Export Board works when WITH_API='true'.
+      # If you disable Wekan API, Export Board does not work.
+      - WITH_API='true'
+      #---------------------------------------------------------------
     depends_on:
       - wekandb
 

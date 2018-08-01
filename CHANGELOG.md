@@ -1,3 +1,9 @@
+# v0.18 2018-08-01
+
+* Enable API by default, so that Export Board works.
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.17 2018-05-19
 
 * Use MongoDB 3.2.20
