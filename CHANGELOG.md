@@ -1,6 +1,7 @@
 # v0.18 2018-08-01
 
 * Enable API by default, so that Export Board works.
+* Add Matomo options.
 
 Thanks to GitHub user xet7 for contributions.
 
