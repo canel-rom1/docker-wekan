@@ -1,3 +1,9 @@
+# v0.19 2018-08-03
+
+* Update wekan-app container internal port to 8080
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.18 2018-08-01
 
 * Enable API by default, so that Export Board works.
