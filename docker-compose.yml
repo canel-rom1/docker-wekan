@@ -1,7 +1,10 @@
 version: '2'
 
 services:
-
+  # NOTE: docker-compose is not required for using Wekan with Docker.
+  #       You can also use Docker commands with these same environment
+  #       variables: https://github.com/wekan/wekan/wiki/Docker#quay
+  #-------------------------------------------------------------------
   # 1) Create a dedicated user for Wekan, for example:
   #      sudo useradd -d /home/wekan -m -s /bin/bash wekan
   # 2) Add this user to the docker group, then logout+login or reboot:

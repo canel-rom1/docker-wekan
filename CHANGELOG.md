@@ -1,3 +1,11 @@
+# v0.20 2018-08-10
+
+* Add note to beginning of docker-compose.yml that
+  using docker-compose is not required, you can
+  also use [Docker commands](https://github.com/wekan/wekan/wiki/Docker#quay).
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.19 2018-08-03
 
 * Update wekan-app container internal port to 8080
