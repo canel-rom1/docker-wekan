@@ -1,6 +1,7 @@
 # v0.21 2018-08-14
 
 * Add trusted URL and browser-policy optios.
+* Fix quotes.
 
 Thanks to GitHub user xet7 for contributions.
 
