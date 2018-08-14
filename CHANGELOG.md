@@ -1,3 +1,9 @@
+# v0.21 2018-08-14
+
+* Add trusted URL and browser-policy optios.
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.20 2018-08-10
 
 * Add note to beginning of docker-compose.yml that
