@@ -1,3 +1,9 @@
+# v0.22 2018-08-22
+
+- Make the attributes that the webhook sends configurable.
+
+Thanks to GitHub users omarsy and xet7 for their contributions.
+
 # v0.21 2018-08-14
 
 * Add trusted URL and browser-policy optios.
