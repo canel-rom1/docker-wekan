@@ -1,3 +1,10 @@
+# v0.33 2018-08-25
+
+- Remove friend, that branch is not in Wekan anymore. Options for iframe are at devel and master branches.
+- Add OAuth2.
+
+Thanks to GitHub users salleman33 and xet7 for their contributions.
+
 # v0.22 2018-08-22
 
 - Make the attributes that the webhook sends configurable.
