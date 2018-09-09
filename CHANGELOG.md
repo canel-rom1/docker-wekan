@@ -1,4 +1,10 @@
-# v0.33 2018-08-25
+# v0.24 2018-09-10
+
+- Upgrade to MongoDB 3.2.21
+
+Thanks to GitHub user xet7 for contributions.
+
+# v0.23 2018-08-25
 
 - Remove friend, that branch is not in Wekan anymore. Options for iframe are at devel and master branches.
 - Add OAuth2.
