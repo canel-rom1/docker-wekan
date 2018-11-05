@@ -1,6 +1,6 @@
 # 2018-11-05 MOVED
 
-Newest docker-compose.yml has moved to https://github.com/wekan/wekan file docker-compose.yml
+Newest docker-compose.yml has moved to https://github.com/wekan/wekan/blob/edge/docker-compose.yml
 
 # Docker: Wekan <=> MongoDB
 
