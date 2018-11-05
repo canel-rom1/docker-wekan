@@ -1,6 +1,9 @@
 # 2018-11-05 MOVED
 
-Newest docker-compose.yml has moved to https://github.com/wekan/wekan/blob/edge/docker-compose.yml
+Newest Meteor 1.6.x based docker-compose.yml has moved to https://github.com/wekan/wekan/blob/edge/docker-compose.yml
+
+Info about testing Meteor 1.8.x based Wekan Docker version, please report to that issue is there speed improvements:
+https://github.com/wekan/wekan/issues/1947#issuecomment-435886419
 
 # Docker: Wekan <=> MongoDB
 
