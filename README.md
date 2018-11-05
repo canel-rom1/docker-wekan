@@ -1,3 +1,7 @@
+# 2018-11-05 MOVED
+
+Newest docker-compose.yml has moved to https://github.com/wekan/wekan file docker-compose.yml
+
 # Docker: Wekan <=> MongoDB
 
 * [Wekan kanban board, made with Meteor.js framework, running on
