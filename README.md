@@ -1,22 +1,3 @@
-# 2018-11-05 MOVED
-
-Newest Meteor 1.6.x based docker-compose.yml has moved to https://github.com/wekan/wekan/blob/edge/docker-compose.yml
-
-Info about testing Meteor 1.8.x based Wekan Docker version, please report to that issue is there speed improvements:
-https://github.com/wekan/wekan/issues/1947#issuecomment-435886419
-
-Newer meteor version is at meteor-1.8 branch, it also has [less CVEs](https://github.com/wekan/wekan/issues/2047):
-https://github.com/wekan/wekan/blob/meteor-1.8/docker-compose.yml
-
-There change:
-```
-image: quay.io/wekan/wekan:meteor-1.8
-```
-It's also possible to use newer [MongoDB 4.x](https://hub.docker.com/_/mongo/) with newer meteor:
-```
-image: mongo:xenial
-```
-
 # Docker: Wekan <=> MongoDB
 
 * [Wekan kanban board, made with Meteor.js framework, running on
