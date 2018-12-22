@@ -1,3 +1,9 @@
+# v0.25 2018-12.22
+
+- Update docker-compose.yml
+
+Thanks to GitHub user xet7 for contributions.
+
 # v0.24 2018-09-10
 
 - Upgrade to MongoDB 3.2.21
