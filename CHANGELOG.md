@@ -1,4 +1,10 @@
-# v0.25 2018-12.22
+# v0.26 2018-12-28
+
+- Add optional Nginx reverse proxy config.
+
+Thanks to GitHub user MyTheValentinus for contributions.
+
+# v0.25 2018-12-22
 
 - Update docker-compose.yml
 
