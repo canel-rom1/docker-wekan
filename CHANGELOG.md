@@ -1,3 +1,8 @@
+# v 2019-05-08
+
+- Update version (3.7) of docker-compose file.
+
+
 # v0.26 2018-12-28
 
 - Add optional Nginx reverse proxy config.
